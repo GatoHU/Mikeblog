@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+    <title>MikeBlog</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body style="text-align: center; margin-top: 5px;">
+        <div id="header-placeholder"></div>
+        <div class="conteprincipal">
+            <h2>¡Bienvenidos a mi blog!</h2>
+            <h4 style="text-align: left;">A Viernes, 8 de mayo del 2026</h4>
+            <ul>
+                <li>
+                    <a href="/index.html">Inicio de la página :DD</a>
+                </li>
+                <li>
+                    <a href="/Indice/Indice.html">El indice que es esta pagina :v</a>
+                </li>
+                <li><h2>Pump it Up</h2></li>
+                <li><a href="/PumpItUp/08052026.html">¡Conversión de cableado original a zero delay!</a></li>
+            </ul>
+            <p style="text-align: left;">Escribire algunos blogs</p>
+        </div>
+        <div id="footer-placeholder"></div>
+    </body>
+    <script>
+        fetch('../header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-placeholder').innerHTML = data)
+        fetch('../footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data)
+    </script>
+</html>
