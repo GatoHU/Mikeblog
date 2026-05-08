@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <title>MikeBlog</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body style="text-align: center; margin-top: 5px;">
+        <div id="header-placeholder"></div>
+        <div class="conteprincipal">
+            <h2>¡Bienvenidos a mi blog!</h2>
+            <h4 style="text-align: left;">A Jueves, 7 de mayo del 2026</h4>
+            <p style="text-align: left;">¡Hola! Soy Mike, un estudiante de sexto grado (al momento de escribir esto), que le encanta la tecnologia, la musica, programar y conocer los avances tecnológicos, además de estudiar los sistemas <i>retro</i>.</p>
+            <p style="text-align: left;">En este blog, escribiré sobre mis gustos, lo que pasa en mi dia a dia, y sobre opiniones criticas a estas. Este blog no está relacionado a la pagina <i>"Blogger"</i> y todo esto es creado por mi en el Visual Studio Code con HTML y CSS, ademas de un poco de JavaScript o JS. He aqui dejado enlaces a temas que escribire en este blog, como Pump It Up, lenguajes de programacion, la inteligencia artificial, adaptadores y placas madres así como computadoras y sistemas operativos; tambien sobre opiniones críticas hacia varios generos musicales y canciones.</p>
+            <img src="img0.jpg" width="1366" height="768">
+            <p>Este es una imagen donde muestro uno de mis proyectos en turbowarp, se encuentra en mi perfil de scratch, les dejare el link en la seccion de Enlacess</p>
+        </div>
+        <div id="footer-placeholder"></div>
+    </body>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-placeholder').innerHTML = data)
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data)
+    </script>
+</html>
