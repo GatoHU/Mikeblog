@@ -1,0 +1,42 @@
+h1 {
+    text-align: center;
+    color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    margin-bottom: 0%;
+}
+h2 {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0%;
+}
+body {
+    background: linear-gradient(to bottom, #00e1ff 0%, #0400ff 100%);
+    background-attachment: fixed;
+}
+.conteprincipal {
+    width: 90%;
+    max-width: 2160px;
+    margin: 20px auto;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    margin: 0%;
+    padding: 0%;
+    background: linear-gradient(to bottom #00ff0d 0%, #0400ff 100%);
+}
+a {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+}
+li {
+    text-align: left;
+}
+footer {
+    background-color: aqua;
+}

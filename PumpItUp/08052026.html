@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <title>MikeBlog</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body style="text-align: center; margin-top: 5px;">
+        <div id="header-placeholder"></div>
+        <div class="conteprincipal">
+            <h2>¡Conversión de cableado original a zero delay!</h2>
+            <h4 style="text-align: left;">A Viernes, 8 de mayo del 2026</h4><p>
+                ¡Hola!, soy Mike, el escritor de este blog, desde antier, ayer y hoy y talvez uno o dos dias más, estoy conviertiendo dos pads de metal pump it up de su cableado original a un zero delay para un stepmania (stepf2 en si), ya termine un pad, que tiene varios sensores dañados, y hoy (al momento que escribo esto), estoy trabajando en el siguiente pad, hoy, debido a la lluvia, solo he podido terminar una key o una flecha del pad, en el cual, si le sirven los 4 sensores.
+            </p><h3>
+                ¿Qué fue lo que hice para poder adaptarlo al zero delay?
+            </h3><p>
+                Bueno lo que hice fuee, con ayuda de mi papá botamos o quitamos la tapa que se encuentra entre las dos flechas superiores o las rojas y ahi se encontraba una placa donde convertia los cables a los arneses azules y rojos para el equipo original, pues ahi, se tiene que desconectar todos los arneses que se encuentran ahi, ahorita, los que nos va a servir son los cinco de colores y los 3 superiores de arriba no; después, cortamos esos arneses de los cables y se encontraran 7 cables.
+            </p><ul>
+                <li>
+                    Los cables rojo, naranja, azul y verde son los sensores de esa flecha. En si son los positivos (+)
+                </li>
+                <li>
+                    Los negros son las de tierra o los GND
+                </li>
+                <li>
+                    Los cables amarillo y blanco son los de las luces, que se manejan, bueno al menos los que ocupo, a 12V
+                </li>
+            </ul>
+            <p>
+                Ahora, en los cables del zero delay, vienen en colores blanco y azul, el azul es el de tierra GND y el blanco el positivo +, ahora, con un multimetro, hay que ir comprobando cual es cual, en este caso la de tierra, con el que siempre comienzo, con el modo de continuidad, en un arnés de algun sensor de la flecha que queremos conectar, debemos desconectarlo del arnes, y poner la clavija del multimetro en la entrada del arnes de la tierra, y en los arneses que van el la tapa que he mencionado, comprobar si es ese arnes o no; una vez localizado cortaremos el cable de tierra que va conectado al arnes ¡¡MUY IMPORTANTE!! y del cable que va al arnes lo conectaremos al cable azul del zero delay, los cables de colores que estan en el arnes tambien debemos cortarlos del arnes y conectarlos al cable blanco del cable del zero delay; este proceso lo repetiremos hasta completar todas las flechas.
+            </p><p>
+                En el stepmania o el stepf2 debemos mapearlos correctamente, y despues, calibrar las flechas con el ritmo de la musica, porque, aunque se llame zero delay, se tienen que calibrar xddd :v
+            </p><h2>
+                Gracias por leer este post y le deseo un gran día!
+            </h2>
+        </div>
+        <div id="footer-placeholder"></div>
+    </body>
+    <script>
+        fetch('/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-placeholder').innerHTML = data)
+        fetch('/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data)
+    </script>
+</html>
